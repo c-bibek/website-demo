@@ -1,0 +1,353 @@
+/* Flip card container */
+.flip-card {
+    background-color: transparent;
+    perspective: 1000px; /* Adds a 3D perspective */
+}
+
+/* Inner container for the flipping effect */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+/* Front and back faces */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Front face */
+.flip-card-front {
+    background-color: black;
+    color: white;
+}
+
+/* Back face */
+.flip-card-back {
+    background-color: #f0f0f0;
+    color: black;
+    transform: rotateY(180deg);
+    padding: 15px;
+}
+
+/* On hover */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain; /* Ensures the image scales without cropping */
+    margin: auto;
+    display: block;
+}
+
+input:invalid, select:invalid {
+    border-color: red;
+    outline: none;
+}
+
+input:focus:invalid, select:focus:invalid {
+    box-shadow: 0 0 5px red;
+}
+
+.custom-form-container {
+    max-width: 300px; /* Adjust width to 50% or smaller */
+    margin-left: 0;   /* Align left */
+    margin-right: auto; /* Center if needed */
+    text-align: left; /* Align text inside the form */
+}
+form input,
+form select,
+form button {
+    width: 100%; /* Make form elements responsive to the container */
+    margin-bottom: 10px; /* Add spacing between fields */
+}
+/* Form and "Why Choose Us" alignment */
+#get-a-quote .row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* Form container */
+#get-a-quote .form-select,
+#get-a-quote .form-control {
+    width: 100%; /* Make inputs responsive */
+}
+
+/* Why Choose Us section */
+#get-a-quote .col-md-6 img {
+    display: block;
+    margin-top: 20px;
+}
+/* Contact Us Section */
+.row.mt-4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.row.mt-4 .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.row.mt-4 .col-md-6 h4 {
+    margin-bottom: 10px;
+}
+
+.row.mt-4 .col-md-6 ul {
+    padding-left: 0;
+    list-style: none;
+}
+footer .row {
+    margin: 0; /* Removes unnecessary margins */
+    padding: 20px 0; /* Adds padding for consistent spacing */
+}
+/* Align Contact Us and Quick Links Sections */
+.container.mt-4 .row.align-items-start {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.container.mt-4 .col-md-6 {
+    padding: 0 15px; /* Adjust spacing */
+}
+
+.container.mt-4 .col-md-6 img {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.container.mt-4 .col-md-6 h4 {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.container.mt-4 ul {
+   
+/* Style for the dropdown menu */
+.nav-item.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff; /* Background for the dropdown menu */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+    padding: 0; /* Remove default padding */
+    list-style: none;
+    z-index: 1000;
+    min-width: 200px; /* Adjust width */
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+/* Display dropdown on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Style for dropdown items */
+.dropdown-item {
+    padding: 10px 15px; /* Adjust spacing */
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa; /* Highlight on hover */
+    color: #0056b3; /* Optional: Link color on hover */
+}
+/* Dropdown parent styling */
+.nav-item.dropdown {
+    position: relative;
+}
+
+/* Dropdown menu hidden by default */
+.dropdown-menu {
+    display: none; /* Hide dropdown initially */
+    position: absolute;
+    top: 100%; /* Position below the parent link */
+    left: 0;
+    background-color: #ffffff; /* Background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    list-style: none;
+    padding: 0;
+    z-index: 1000;
+}
+
+/* Show dropdown on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Dropdown menu item styling */
+.dropdown-item {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: background-color 0.2s;
+}
+
+/* Highlight dropdown item on hover */
+.dropdown-item:hover {
+    background-color: #f8f9fa; /* Light gray hover */
+    color: #0056b3; /* Optional text color change */
+}
+/* General Navbar Styling */
+.navbar {
+    background-color: #000;
+    padding: 10px;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #222;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    display: none; /* This hides the dropdown by default */
+    min-width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu li {
+    text-align: left;
+    margin: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.dropdown-menu a:hover {
+    background-color: #444;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-menu {
+    display: block; /* This shows the dropdown when hovered */
+}
+/* Dropdown Menu */
+.nav-item.dropdown {
+    position: relative;
+}
+
+.nav-item.dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position below the parent link */
+    left: 0;
+    background-color: #222; /* Background color */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+/* Show Dropdown on Hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block; /* Show the dropdown menu on hover */
+}
+
+/* Dropdown Items */
+.nav-item.dropdown .dropdown-menu li {
+    text-align: left;
+}
+
+.nav-item.dropdown .dropdown-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+.nav-item.dropdown .dropdown-menu a:hover {
+    background-color: #444; /* Hover effect */
+}
+/* General Navigation Bar Styling */
+.navbar {
+  font-size: 1rem;
+}
+
+.nav-link {
+  margin-right: 15px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.dropdown-menu {
+  background-color: #333;
+  border: none;
+}
+
+.dropdown-menu .dropdown-item {
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #444;
+}
+.navbar {
+    position: relative;
+    z-index: 1000;
+}

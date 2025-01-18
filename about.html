@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rise Technologies offers IT solutions including consulting, managed services, and VOIP solutions across New York.">
+    <meta name="keywords" content="IT Services, VOIP, Managed IT, Network Security">
+    <meta name="author" content="Rise Technologies">
+    <title>Rise Technologies | IT Solutions</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+	<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="c36d825c-8ae7-48a5-986d-3b136329f201";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+</head>
+
+<body style="background: linear-gradient(to bottom, #76c4ae, #dcecfa);">
+  <header>
+  
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Logo" style="height: 40px;">
+        </a>
+
+        <!-- Hamburger Button for Mobile -->
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+				
+                <li class="nav-item dropdown">
+                     <a
+        id="servicesDropdown"
+        class="nav-link dropdown-toggle"
+        href="#"
+        role="button"
+        onclick="handleServicesClick(event)"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+    >
+        Our Services
+    </a>
+                    <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                        <li><a href="it-maintenance.html" class="dropdown-item">IT Maintenance & Services</a></li>
+                        <li><a href="it-security.html" class="dropdown-item">IT Security Management</a></li>
+                        <li><a href="data-backup.html" class="dropdown-item">Data Backup</a></li>
+                        <li><a href="web-hosting.html" class="dropdown-item">Web Hosting</a></li>
+                        <li><a href="it-assessment.html" class="dropdown-item">IT Assessment</a></li>
+                        <li><a href="voip.html" class="dropdown-item">VOIP</a></li>
+                        <li><a href="wireless-installation.html" class="dropdown-item">Wireless Installation</a></li>
+                    </ul>
+                </li>
+				
+				
+<script>
+    let servicesClicked = false;
+    let resetTimer;
+
+    function handleServicesClick(event) {
+        if (servicesClicked) {
+            // Redirect to services.html on the second click
+            window.location.href = "services.html";
+        } else {
+            // Open the dropdown menu on the first click
+            servicesClicked = true;
+            event.preventDefault();
+
+            // Set a timeout to reset the click after 5 seconds
+            clearTimeout(resetTimer);
+            resetTimer = setTimeout(() => {
+                servicesClicked = false;
+            }, 5000); // Reset after 5 seconds
+        }
+    }
+</script>
+
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="support.html" class="nav-link">Support</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Phone Number -->
+        <a href="tel:+15165450065" class="nav-link" style="color: #ffffff; font-weight: bold;">
+            (516) 545-0065
+        </a>
+    </div>
+</nav>
+
+
+</header>
+
+<section>
+    <div class="container-fluid p-5" style="background-image: url('images/remoteonline1.webp'); background-size: cover; background-position: center;">
+    <div class="container">
+        
+        <p style="font-size: 1.2rem; color:white">
+            <b>Rise Technologies is a trusted New York-based IT consulting and support company, serving businesses across New York and the Tri-state area. 
+            <a href="services.html" style="color: #e63946; font-weight: bold; text-decoration: none;">Our services</a> include comprehensive IT setup, efficient network management, and reliable data backup solutions.</b>
+        </p>
+    </div>
+    
+</div>
+
+
+</section>
+
+
+
+<section class="py-5" style="background-color: #f9f9f9;">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-6">
+                <h2 class="fw-bold text-primary">An IT Company You Can Trust</h2>
+                <p>
+                    At Rise Technologies, we are committed to ensuring that every aspect of your IT infrastructure is thoroughly managed and maintained with the utmost care. Our team works tirelessly to provide tailored solutions that meet your unique business requirements. Countless organizations trust us to keep their operations running smoothly and efficiently, minimizing downtime and maximizing productivity.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="images/Office_environment.webp" alt="Office environment" class="img-fluid rounded shadow">
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-md-6 order-md-2">
+                <h2 class="fw-bold text-primary">We Prevent IT Problems</h2>
+                <p>
+Our skilled experts excel in resolving any challenges that come their way, ensuring your IT systems operate seamlessly. With a proactive approach, they anticipate potential issues and address them before they can disrupt your operations. From ensuring your software and systems are always up to date to implementing robust measures to safeguard your sensitive data, we handle every aspect of your IT infrastructure. This allows you to focus entirely on growing and managing your business, knowing your technology is in capable hands.                </p>
+            </div>
+            <div class="col-md-6 order-md-1">
+                <img src="images/Team_working.webp" alt="Team working" class="img-fluid rounded shadow">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="fw-bold text-primary">Located and Trusted in New York</h2>
+                <p>
+                    We’ve been in business for over 10 years. Trust Rise Technologies for all of your IT needs. <a href="contact.html">Contact us</a> to find out how we can help you today.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="images/Office_desk.webp" alt="Office desk setup" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="text-center py-5">
+    <h2>Let's Talk About Your Technology Needs</h2>
+    <p>Click below to call one of our agents</p>
+    <a href="tel:5165450065" class="btn btn-primary">(516) 545-0065</a>
+</section>
+
+
+
+
+	
+<section id="get-a-quote" class="py-5" style="background-color: #eef2f7;">
+    <div class="container">
+        <h2 class="text-start mb-4" style="font-weight: bold;">GET A QUOTE</h2>
+        <div class="row">
+            <!-- Form Section -->
+            <div class="col-md-6">
+                <form action="https://formspree.io/f/mqaanbdw" method="POST">
+                    <p class="text-start">What can we help with?</p>
+                    <select name="service" class="form-select mb-3" aria-label="What can we help with?" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="it-services">IT Services</option>
+                        <option value="voip">VOIP</option>
+                        <option value="data-backup">Data Backup</option>
+                        <option value="cabling">Cabling</option>
+                        <option value="urgent-request">Urgent Request</option>
+                    </select>
+                    <input type="text" name="name" class="form-control mb-3" placeholder="Your Name" aria-label="Your Name" required>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <input type="tel" name="phone" pattern="[0-9]{10}" class="form-control" placeholder="Phone Number" aria-label="Phone Number" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" name="email" class="form-control" placeholder="Email Address" aria-label="Email Address" required>
+                        </div>
+                    </div>
+                    <input type="hidden" name="_gotcha" style="display: none;">
+                    <button type="submit" class="btn btn-primary text-start">Send</button>
+                </form>
+            </div>
+
+            <!-- Why Choose Us Section -->
+            <div class="col-md-6">
+                <h4 class="text-start">Why Choose Us?</h4>
+                <p class="text-start">At Rise Technologies, we specialize in providing reliable IT solutions to streamline your operations and protect your data. Our expert team is dedicated to delivering personalized and efficient support tailored to your needs.</p>
+                <img src="images/aboutus.png" alt="About Us" class="img-fluid mt-3" style="width: 70%; max-width: 100%;">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<hr class="my-4">
+<div class="container mt-4">
+    <div class="row">
+        <!-- Logo Section -->
+        <div class="col-md-2 text-center">
+            <img src="images/logo.png" alt="Rise Technologies Logo" class="img-fluid mb-3" style="max-width: 100px;">
+        </div>
+        <!-- Contact Us Section -->
+        <div class="col-md-5 text-start">
+            <h4>Contact Us</h4>
+            <p class="mb-1">Phone: (516) 545-0065</p>
+            <p class="mb-1">Fax: (516) 545-0065</p>
+            <p class="mb-1">Email: <a href="mailto:sales@risetechs.com" class="text-black text-decoration-none">sales@risetechs.com</a></p>
+        </div>
+        <!-- Quick Links Section -->
+        <div class="col-md-5 text-start">
+            <h4>Quick Links</h4>
+            <ul class="list-unstyled">
+                <li><a href="services.html" class="text-black text-decoration-none">Our Services</a></li>
+                <li><a href="about.html" class="text-black text-decoration-none">About Us</a></li>
+                <li><a href="support.html" class="text-black text-decoration-none">Remote Support</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Rise Technologies. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
